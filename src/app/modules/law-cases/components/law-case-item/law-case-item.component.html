@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="card-header">Case ID: {{ lawCase.id }}</div>
+  <div class="card-body">
+    <h5 class="card-title">{{ lawCase.name }}</h5>
+    <h6 *ngIf="lawCase.docket_number" class="card-subtitle mb-2 text-muted">{{ lawCase.docket_number }}</h6>
+    <h6>{{ lawCase.decision_date }}</h6>
+  </div>
+  <div class="card-footer">
+    <a href="{{ lawCase.url }}" class="card-link">Additional Info</a>
+  </div>
+</div>
